@@ -2,23 +2,23 @@
 <vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<setting title="Tiles file" type="file" pref="extensions.tagprotheme@neyuh.tiles" oninputchanged="">
 		Tiles.png
-	</setting>
+	</setting><setting title="Reset" type="control" pref="extensions.tagprotheme@neyuh.tiles.reset" onclick="">Reset tiles file</setting>
 	<setting title="Speedpad file" type="file" pref="extensions.tagprotheme@neyuh.speedpad" oninputchanged="">
 		Speedpad.png
-	</setting>
+	</setting><setting title="Reset" type="control" pref="extensions.tagprotheme@neyuh.speedpad.reset" onclick="">Reset speedpad file</setting>
 	<setting title="SpeedpadRed file" type="file" pref="extensions.tagprotheme@neyuh.speedpadred" oninputchanged="">
 		SpeedpadRed.png
-	</setting>
+	</setting><setting title="Reset" type="control" pref="extensions.tagprotheme@neyuh.speedpadred.reset" onclick="">Reset speedpadred file</setting>
 	<setting title="SpeedpadBlue file" type="file" pref="extensions.tagprotheme@neyuh.speedpadblue" oninputchanged="">
 		SpeedpadBlue.png
-	</setting>
+	</setting><setting title="Reset" type="control" pref="extensions.tagprotheme@neyuh.speedpadblue.reset" onclick="">Reset speedpadblue file</setting>
 	<setting title="Splats file" type="file" pref="extensions.tagprotheme@neyuh.splats" oninputchanged="">
 		Splats.png
-	</setting>
+	</setting><setting title="Reset" type="control" pref="extensions.tagprotheme@neyuh.splats.reset" onclick="">Reset splats file</setting>
 	<setting title="Flair file" type="file" pref="extensions.tagprotheme@neyuh.flair" oninputchanged="">
 		Flair.png
-	</setting>
+	</setting><setting title="Reset" type="control" pref="extensions.tagprotheme@neyuh.flair.reset" onclick="">Reset flair file</setting>
 	<setting title="Portal file" type="file" pref="extensions.tagprotheme@neyuh.portal" oninputchanged="">
 		Portal.png
-	</setting>
+	</setting><setting title="Reset" type="control" pref="extensions.tagprotheme@neyuh.portal.reset" onclick="">Reset portal file</setting>
 </vbox>

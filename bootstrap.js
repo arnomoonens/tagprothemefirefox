@@ -149,6 +149,19 @@ var observers = {
                     setattr += 'ss.storage.' + fileTypes[i] + ' = "data:" + contentType + ";base64," + encoded;';
                     setattr += 'console.log("file saved");';
                     doc.querySelector('setting[pref="extensions.tagprotheme@neyuh.' + fileTypes[i] + '"]').setAttribute('oninputchanged', setattr);
+
+                    //SyntaxError: missing ) after argument list
+                    setattr = 'const {classes: Cc, interfaces: Ci, utils: Cu} = Components;';
+                    setattr += 'const { devtools } = Cu.import("resource://gre/modules/devtools/Loader.jsm", {});';
+                    setattr += 'const { require } = devtools;';
+                    setattr += 'var ss = require("sdk/simple-storage");';
+                    setattr += 'Components.utils.import("resource://gre/modules/devtools/Console.jsm");';
+                    setattr += 'var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);';
+                    setattr += 'prefManager.clearUserPref("extensions.tagprotheme@neyuh.' + fileTypes[i] + '");';
+                    setattr += 'var custompref = "extensions.tagprotheme@neyuh.' + fileTypes[i] + '";';
+                    setattr += 'document.querySelector("setting[pref=\'extensions.tagprotheme@neyuh.' + fileTypes[i] + '\']").value = "";';
+                    setattr += 'delete ss.storage.' + fileTypes[i] + ';';
+                    doc.querySelector('setting[pref="extensions.tagprotheme@neyuh.' + fileTypes[i] + '.reset"]').setAttribute('onclick', setattr);
                 }
                 //end the oninput changed method
             }
